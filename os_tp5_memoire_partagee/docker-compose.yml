@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  gcc:
+
+    container_name: gcc_tp5
+    build: .
+
+    tty: true
+    stdin_open: true
+    volumes:
+      - "./code:/code"
